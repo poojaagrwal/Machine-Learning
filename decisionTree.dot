@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="Outlook <= 2.5\ngini = 0.459\nsamples = 14\nvalue = [5, 9]\nclass = Yes", fillcolor="#399de571"] ;
+1 [label="Humidity <= 0.5\ngini = 0.5\nsamples = 10\nvalue = [5, 5]\nclass = No", fillcolor="#e5813900"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Outlook <= 1.5\ngini = 0.32\nsamples = 5\nvalue = [4, 1]\nclass = No", fillcolor="#e58139bf"] ;
+1 -> 2 ;
+3 [label="gini = 0.0\nsamples = 3\nvalue = [3, 0]\nclass = No", fillcolor="#e58139ff"] ;
+2 -> 3 ;
+4 [label="Wind <= 0.5\ngini = 0.5\nsamples = 2\nvalue = [1, 1]\nclass = No", fillcolor="#e5813900"] ;
+2 -> 4 ;
+5 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = Yes", fillcolor="#399de5ff"] ;
+4 -> 5 ;
+6 [label="gini = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = No", fillcolor="#e58139ff"] ;
+4 -> 6 ;
+7 [label="Wind <= 0.5\ngini = 0.32\nsamples = 5\nvalue = [1, 4]\nclass = Yes", fillcolor="#399de5bf"] ;
+1 -> 7 ;
+8 [label="gini = 0.0\nsamples = 3\nvalue = [0, 3]\nclass = Yes", fillcolor="#399de5ff"] ;
+7 -> 8 ;
+9 [label="Outlook <= 1.5\ngini = 0.5\nsamples = 2\nvalue = [1, 1]\nclass = No", fillcolor="#e5813900"] ;
+7 -> 9 ;
+10 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = Yes", fillcolor="#399de5ff"] ;
+9 -> 10 ;
+11 [label="gini = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = No", fillcolor="#e58139ff"] ;
+9 -> 11 ;
+12 [label="gini = 0.0\nsamples = 4\nvalue = [0, 4]\nclass = Yes", fillcolor="#399de5ff"] ;
+0 -> 12 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
